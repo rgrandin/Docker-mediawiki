@@ -1,5 +1,5 @@
 FROM mediawiki:1.32
 
-RUN apt-get update 
+RUN apt-get update
 
-RUN docker-php-ext-install -j$(nproc) ldap
+RUN apt-get install -y php-ldap 
